@@ -1,421 +1,1449 @@
 <!DOCTYPE html>
 <html lang="ka">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Case Study: The Incident</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <div id="snow-container"></div>
     <div class="ambient-light"></div>
 
     <header class="hero-full glass-panel">
-        <div class="hero-inner-container">
-            
-            <div class="hero-top">
-                <h1>CASE STUDY <span class="highlight">04</span></h1>
-                <h2>„ეს შენი პასუხისმგებლობა იყო“</h2>
-                <div class="context-badge">
-                    Context: Night Shift / Critical Incident / High Stress
-                </div>
-            </div>
-            
-            <div class="mission-dashboard">
-                
-                <div class="mission-card">
-                    <div class="card-header">
-                        <img src="assets/step1.jpeg" alt="Identification" class="card-img">
-                        <h3>PHASE 1: იდენტიფიკაცია</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul class="task-list">
-                            <li><strong>Stage 2:</strong> დიალოგის რომელ მონაკვეთში გამოიკვეთა მისკომუნიკაცია?</li>
-                            <li><strong>Stage 3:</strong> სად დაიწყო კონფლიქტი (თავდაცვის რომელი ფორმები გამოვლინდა?)</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="mission-card">
-                    <div class="card-header">
-                        <img src="assets/step2.jpeg" alt="Analysis" class="card-img">
-                        <h3>PHASE 2: ანალიზი</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul class="task-list">
-                            <li>რა <strong>სოციალური მოთხოვნილებები</strong> აქვთ მხარეებს?</li>
-                            <li>გამოიყენეთ <em>5 ბაზისური კითხვა</em> სიღრმისეული ანალიზისთვის.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="mission-card">
-                    <div class="card-header">
-                        <img src="assets/step3.jpeg" alt="Resolution" class="card-img">
-                        <h3>PHASE 3: გადაჭრა (ACR)</h3>
-                    </div>
-                    <div class="card-body">
-                        <ul class="task-list">
-                            <li><strong>Roleplay:</strong> როგორ გაუმკლავდებოდით კონფლიქტს გიორგის და ლაშას როლებში?</li>
-                            <li>დაწერეთ ფრაზები <strong>ACR მოდელის</strong> მიხედვით.</li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
+      <div class="hero-inner-container">
+        <div class="hero-top">
+          <h1>CASE STUDY <span class="highlight">04</span></h1>
+          <h2>„ეს შენი პასუხისმგებლობა იყო“</h2>
+          <div class="context-badge">
+            Context: Night Shift / Critical Incident / High Stress
+          </div>
         </div>
+
+        <div class="mission-dashboard">
+          <div class="mission-card">
+            <div class="card-header">
+              <img
+                src="assets/step1.jpeg"
+                alt="Identification"
+                class="card-img"
+              />
+              <h3>PHASE 1: იდენტიფიკაცია</h3>
+            </div>
+            <div class="card-body">
+              <ul class="task-list">
+                <li>
+                  <strong>Stage 2:</strong> დიალოგის რომელ მონაკვეთში გამოიკვეთა
+                  მისკომუნიკაცია?
+                </li>
+                <li>
+                  <strong>Stage 3:</strong> სად დაიწყო კონფლიქტი (თავდაცვის
+                  რომელი ფორმები გამოვლინდა?)
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mission-card">
+            <div class="card-header">
+              <img src="assets/step2.jpeg" alt="Analysis" class="card-img" />
+              <h3>PHASE 2: ანალიზი</h3>
+            </div>
+            <div class="card-body">
+              <ul class="task-list">
+                <li>
+                  რა <strong>სოციალური მოთხოვნილებები</strong> აქვთ მხარეებს?
+                </li>
+                <li>
+                  გამოიყენეთ <em>5 ბაზისური კითხვა</em> სიღრმისეული
+                  ანალიზისთვის.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="mission-card"
+            onclick="document.getElementById('ACR-Modal').scrollIntoView({behavior: 'smooth'})"
+            style="cursor: pointer"
+          >
+            <div class="card-header">
+              <img src="assets/step3.jpeg" alt="Resolution" class="card-img" />
+              <h3>PHASE 3: გადაჭრა (ACR)</h3>
+            </div>
+            <div class="card-body">
+              <ul class="task-list">
+                <li>
+                  <strong>Roleplay:</strong> როგორ გაუმკლავდებოდით კონფლიქტს
+                  გიორგის და ლაშას როლებში?
+                </li>
+                <li>დაწერეთ ფრაზები <strong>ACR მოდელის</strong> მიხედვით.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main class="container">
-        <section class="timeline-area">
-            <div class="timeline-line"></div>
-                 <!-- ნიმუში -->
-            <div class="dialogue-row manager-row">
-                <div class="avatar"><img src="assets/giorgi.jpeg" alt="Giorgi"></div>
-                <div class="content-wrapper">
-                    <div class="message manager analysis">
-                        <div class="author">Engineering Manager</div>
-                        <p>— ლაშა, იცი, რატომ ვართ აქ?</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel">
-                        <div class="analysis-card">
-                            <h4>ნიმუში: სტუდენტის ანალიზი</h4>
-                            <p>აქ გიორგი იწყებს "Parent" პოზიციიდან. კითხვა რიტორიკულია და მიზნად ისახავს დომინირებას.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ნიმუშის დასასრული -->
-            <div class="dialogue-row junior-row">
-                <div class="content-wrapper">
-                    <div class="message junior">
-                        <div class="author">Junior Developer</div>
-                        <p>— production-ზე შეცდომა გამოვიდა.</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
-                <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha"></div>
+      <section class="timeline-area">
+        <div class="timeline-line"></div>
+
+        <div class="dialogue-row manager-row">
+          <div class="avatar">
+            <img src="assets/giorgi.jpeg" alt="Giorgi" />
+          </div>
+          <div class="content-wrapper">
+            <div class="message manager analysis">
+              <div class="author">Engineering Manager</div>
+              <p>— ლაშა, იცი, რატომ ვართ აქ?</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="dialogue-row manager-row">
-                <div class="avatar"><img src="assets/giorgi.jpeg" alt="Giorgi"></div>
-                <div class="content-wrapper">
-                    <div class="message manager">
-                        <div class="author">Engineering Manager</div>
-                        <p>— და ვინ შეეხო ამ მოდულს ბოლოს?</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>სტატუსი/აღიარება</h4>
+                <p>
+                  <strong>ფარული ემოცია:</strong> იმედგაცრუება და სიმკაცრე.<br />
+                  <strong>საჭიროება:</strong> გიორგი იწყებს "მშობლის"
+                  პოზიციიდან. რიტორიკული კითხვა ემსახურება სტატუსის ხაზგასმას და
+                  ლაშას "ბავშვის" როლში ჩაყენებას.<br />
+
+                  <strong>რეალური მიზანი</strong> კონტროლის ხელში აღება,
+                  ძალაუფლების პოზიციის დაფიქსირება. <br />
+
+                  <strong>რას ელოდება?</strong>
+                  დამორჩილებას, არა პასუხს.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--miscomunication start -->
+        <div class="dialogue-row junior-row">
+          <div class="content-wrapper">
+            <div class="message junior">
+              <div class="author">Junior Developer</div>
+              <p>
+                —
+                <span class="text-miscom">production-ზე შეცდომა გამოვიდა.</span>
+              </p>
+
+              <div class="button-group">
+                <div
+                  class="interaction-hint trigger-btn"
+                  data-target="panel-analyze"
+                >
+                  <span>Analyze</span>
+                  <div class="pulse-dot"></div>
                 </div>
+
+                <div
+                  class="interaction-hint trigger-btn miscom-btn"
+                  data-target="panel-miscom"
+                >
+                  <span>Miscommunication</span>
+                  <div class="pulse-dot green-dot"></div>
+                </div>
+              </div>
             </div>
 
-            <div class="dialogue-row junior-row">
-                <div class="content-wrapper">
-                    <div class="message junior">
-                        <div class="author">Junior Developer</div>
-                        <p>— მე… მაგრამ—</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
-                <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha"></div>
+            <div class="analysis-panel panel-analyze">
+              <div class="analysis-card">
+                <h4>უსაფრთხოება/დისტანცირება</h4>
+                <p>
+                  <strong>რა პრობლემის გადაჭრას ცდილობს?</strong> ცდილობს თავი
+                  აარიდოს პირდაპირ დარტყმას.<br />
+                  <strong>ანალიზი:</strong> პასიურ პოზიციაში დარჩენა ("შეცდომა
+                  გამოვიდა") არის <em>უსაფრთხოების</em> მოთხოვნილების
+                  გამოძახილი.
+                </p>
+              </div>
             </div>
 
-            <div class="dialogue-row manager-row">
-                <div class="avatar"><img src="assets/giorgi.jpeg" alt="Giorgi"></div>
-                <div class="content-wrapper">
-                    <div class="message manager">
-                        <div class="author">Engineering Manager (Interrupts)</div>
-                        <p>— საკმარისია.</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
+            <div class="analysis-panel panel-miscom">
+              <div class="analysis-card" style="border-color: #4ade80">
+                <span class="badge badge-miscom"
+                  >Stage 2: Miscommunication</span
+                >
+                <h4>აცდენილი კონტექსტები</h4>
+                <p>
+                  <strong>რატომ არის ეს მისკომუნიკაცია?</strong><br />
+                  გიორგიმ დასვა კითხვა ("რატომ ვართ აქ?"), ლაშამ უპასუხა
+                  ფაქტობრივად ("რა მოხდა?"). აქედან იწყება დიალოგის არასწორი
+                  მიმართულებით წასვლა.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha" /></div>
+        </div>
+
+        <div class="dialogue-row manager-row">
+          <div class="avatar">
+            <img src="assets/giorgi.jpeg" alt="Giorgi" />
+          </div>
+          <div class="content-wrapper">
+            <div class="message manager analysis">
+              <div class="author">Engineering Manager</div>
+              <p>— და ვინ შეეხო ამ მოდულს ბოლოს?</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="scene-divider"><span>ოთახში სიჩუმეა</span></div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>სამართლიანობა, სამართლიანი წესრიგი</h4>
+                <p>
+                  <strong>ემოცია:</strong> ბრაზი, ეჭვი.<br />
+                  <strong>რეალური მიზანი: </strong> დამნაშავის იდენტიფიკაცია.
+                  <br />
+                  <strong>რას ელოდება:</strong> აღიარებას <br />
 
-            <div class="dialogue-row manager-row">
-                <div class="avatar"><img src="assets/giorgi.jpeg" alt="Giorgi"></div>
-                <div class="content-wrapper">
-                    <div class="message manager">
-                        <div class="author">Engineering Manager</div>
-                        <p>— ეს მოდული კრიტიკულია. რატომ არ იყო ეს განხილული?</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
+                  <strong> საჭიროება:</strong>
+                  სამართლიანობის ილუზია / კონტროლი <br />
+                  <strong>ანალიზი:</strong> ეს არის გამომძიებლის კითხვა. გიორგის
+                  მიზანია არა პრობლემის მოგვარება (აგენტურა), არამედ დამნაშავის
+                  პოვნა. ეს კიდევ უფრო ამცირებს ლაშას
+                  <em>უსაფრთხოების</em> განცდას.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dialogue-row junior-row">
+          <div class="content-wrapper">
+            <div class="message junior analysis">
+              <div class="author">Junior Developer</div>
+              <p>— მე… მაგრამ—</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="dialogue-row junior-row">
-                <div class="content-wrapper">
-                    <div class="message junior">
-                        <div class="author">Junior Developer</div>
-                        <p>— მცირე ცვლილება იყო. ტესტები გავუშვი.</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
-                <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha"></div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>სამართლიანობა / სამართლიანი წესრიგი</h4>
+                <p>
+                  <strong>ემოცია: </strong>შფოთვა, იმედი <br />
+                  <strong>რას ელოდება ჩემგან?</strong> ლაშას უნდა, რომ მოუსმინონ
+                  <br />
+                  <strong>საჭიროება: </strong>სამართლიანობა<br />
+                  <strong>ანალიზი:</strong> "მაგრამ" მიანიშნებს, რომ ლაშას აქვს
+                  მიზეზი, რომელიც მის ქმედებას ამართლებს. მას სურს
+                  <em>სამართლიანი</em> სასამართლო და არა ლინჩის წესი.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha" /></div>
+        </div>
+
+        <div class="dialogue-row manager-row">
+          <div class="avatar">
+            <img src="assets/giorgi.jpeg" alt="Giorgi" />
+          </div>
+          <div class="content-wrapper">
+            <div class="message manager analysis">
+              <div class="author">Engineering Manager (Interrupts)</div>
+              <p>— საკმარისია.</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="dialogue-row manager-row">
-                <div class="avatar"><img src="assets/giorgi.jpeg" alt="Giorgi"></div>
-                <div class="content-wrapper">
-                    <div class="message manager">
-                        <div class="author">Engineering Manager</div>
-                        <p>— „მცირე“ არ არსებობს production-ში.</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>აგენტურუბა/ავტონომიის მოთხოვნილება</h4>
+                <p>
+                  <strong>ემოცია:</strong> მოუთმენლობა / ძალაუფლება.<br />
+                  <strong>რეალური მიზანი: </strong>დიალოგის გაწყვეტა,
+                  ძალაუფლების დემონსტრირება<br />
+                  <strong>რას ელოდება: </strong>დუმილს.<br />
+                  <strong>საჭიროება:</strong> სტატუსი / კონტროლი <br />
+                  <strong>ანალიზი:</strong> საუბრის გაწყვეტა არის
+                  <em>სტატუსის</em> უხეში დემონსტრირება. გიორგი ართმევს ლაშას
+                  <em>ავტონომიას</em> (აზრის გამოთქმის უფლებას) და
+                  <em>მიკუთვნებულობას</em> (დიალოგიდან მონოლოგზე გადადის).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-divider"><span>ოთახში სიჩუმეა</span></div>
+
+        <div class="dialogue-row manager-row">
+          <div class="avatar">
+            <img src="assets/giorgi.jpeg" alt="Giorgi" />
+          </div>
+          <div class="content-wrapper">
+            <div class="message manager analysis">
+              <div class="author">Engineering Manager</div>
+              <p>— ეს მოდული კრიტიკულია. რატომ არ იყო ეს განხილული?</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="dialogue-row junior-row">
-                <div class="content-wrapper">
-                    <div class="message junior">
-                        <div class="author">Junior Developer</div>
-                        <p>— მაგრამ code review-ში არაფერი თქვით.</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
-                <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha"></div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>კომპეტენტურობა/მიღწევა</h4>
+                <p>
+                  <strong>ემოცია:</strong> გაღიზიანება პროცესის დარღვევის
+                  გამო.<br />
+                  <strong>რეალური მიზანი:</strong>
+                  არაკომპეტენტურობის დამტკიცება. <br />
+
+                  <strong>რას ელოდება:</strong>
+                  თავის გამართლებას ლაშას მხრიდან, შემდეგ განაჩენს.<br />
+
+                  <strong>საჭიროება:</strong>
+                  კომპეტენციის დაცვა (საკუთარის) <br />
+                  <strong>ანალიზი:</strong> გიორგი უტევს ლაშას
+                  <em>კომპეტენციას</em>. კითხვა ისევ რიტორიკულია — მან იცის
+                  პასუხი, უბრალოდ სურს ლაშამ აღიაროს თავისი არაკომპეტენტურობა.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dialogue-row junior-row">
+          <div class="content-wrapper">
+            <div class="message junior analysis">
+              <div class="author">Junior Developer</div>
+              <p>— მცირე ცვლილება იყო. ტესტები გავუშვი.</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="dialogue-row manager-row">
-                <div class="avatar"><img src="assets/giorgi.jpeg" alt="Giorgi"></div>
-                <div class="content-wrapper">
-                    <div class="message manager">
-                        <div class="author">Engineering Manager</div>
-                        <p>— იმიტომ, რომ არ ველოდებოდი ასეთ შეცდომას.</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>კომპეტენტურობა / მიღწევა</h4>
+                <p>
+                  <strong>ფარული ემოცია:</strong> სასოწარკვეთა / იმედი.<br />
+                  <strong>რეალური მიზანი: </strong> კომპეტენციის დამტკიცება.
+                  <br />
+                  <strong>ანალიზი:</strong> "ტესტები გავუშვი" — ლაშა ცდილობს
+                  დაიბრუნოს <em>კომპეტენციის</em> განცდა. მას სურს
+                  <em>ვალიდაცია</em>, რომ სრულად უპასუხისმგებლო არ არის. "მცირე
+                  ცვლილება" არის პრობლემის მინიმიზაციის მცდელობა.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha" /></div>
+        </div>
+
+        <div class="dialogue-row manager-row">
+          <div class="avatar">
+            <img src="assets/giorgi.jpeg" alt="Giorgi" />
+          </div>
+          <div class="content-wrapper">
+            <div class="message manager analysis">
+              <div class="author">Engineering Manager</div>
+              <p>— „მცირე“ არ არსებობს production-ში.</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="scene-divider"><span>ტონი მკაცრდება</span></div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>სამართლიანობა / სამართლიანი წესრიგი</h4>
+                <p>
+                  <strong> რეალური მიზანი: </strong>
+                  აბსოლუტური წესის დამკვიდრება. <br />
 
-            <div class="dialogue-row junior-row">
-                <div class="content-wrapper">
-                    <div class="message junior">
-                        <div class="author">Junior Developer</div>
-                        <p>— მაშინ რატომ დამიტოვეთ ეს task-ი?</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
-                <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha"></div>
+                  <strong>ემოცია:</strong>
+                  კონტროლი. <br />
+
+                  <strong>რას ელოდება:</strong>
+                  დამორჩილებას. <br />
+
+                  <strong>ანალიზი:</strong> გიორგი იცავს
+                  <em>სამართლიან წესრიგს, </em>მაგრამ დოგმატურად. ის არ იღებს
+                  არგუმენტებს. ეს "Parent" პოზიციაა, რომელიც "Child"-ს ასწავლის
+                  აბსოლუტურ ჭეშმარიტებას.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dialogue-row junior-row">
+          <div class="content-wrapper">
+            <div class="message junior analysis">
+              <div class="author">Junior Developer</div>
+              <p>— მაგრამ code review-ში არაფერი თქვით.</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="dialogue-row manager-row">
-                <div class="avatar"><img src="assets/giorgi.jpeg" alt="Giorgi"></div>
-                <div class="content-wrapper">
-                    <div class="message manager">
-                        <div class="author">Engineering Manager</div>
-                        <p>— იმიტომ, რომ უნდა ისწავლო პასუხისმგებლობა.</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>სამართლიანობა / კონტრშეტევა</h4>
+                <p>
+                  <strong>ფარული ემოცია:</strong> ბრაზი / უსამართლობის
+                  განცდა.<br />
+                  <strong>რეალური მიზანი:</strong>
+                  პასუხისმგებლობის გაზიარება. <br />
+                  <strong>საჭიროება:</strong> თანასწორობა.<br />
+
+                  <strong>რას ელოდება:</strong> სამართლიანობას.<br />
+                  <strong>ანალიზი:</strong> ლაშა გადადის შეტევაზე. "სისტემა
+                  სამართლიანია?". თუ ის დამნაშავეა, მაშინ მენეჯერიც დამნაშავეა
+                  (გამორჩენილი რევიუ). ის ითხოვს პასუხისმგებლობის გაზიარებას.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha" /></div>
+        </div>
+
+        <div class="dialogue-row manager-row">
+          <div class="avatar">
+            <img src="assets/giorgi.jpeg" alt="Giorgi" />
+          </div>
+          <div class="content-wrapper">
+            <div class="message manager analysis">
+              <div class="author">Engineering Manager</div>
+              <p>— იმიტომ, რომ არ ველოდებოდი ასეთ შეცდომას.</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-             <div class="dialogue-row junior-row">
-                <div class="content-wrapper">
-                    <div class="message junior">
-                        <div class="author">Junior Developer</div>
-                        <p>— ეს სწავლაა?</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>სტატუსი / აღიარება</h4>
+                <p>
+                  <strong>ემოცია:</strong> ზიზღი / იმედგაცრუება.<br />
+                  <strong>რეალური მიზანი:</strong>
+                  ლაშას სტატუსის დაკნინება <br />
+
+                  <strong>ემოცია:</strong>
+                  ზიზღი <br />
+
+                  <strong>რას ელოდება:</strong>
+                  დამცირებით დამორჩილებას. <br />
+
+                  <strong>საჭიროება:</strong> სტატუსი <br />
+                  <strong>ანალიზი:</strong> ეს პასუხი ანადგურებს ლაშას
+                  <em>კომპეტენციას</em> და <em>სტატუსს</em>. გიორგი ამბობს: "შენ
+                  იმდენად დაბალი დონის შეცდომა დაუშვი, ჩემი ყურადღების ღირსიც არ
+                  იყავი".
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-divider"><span>ტონი მკაცრდება</span></div>
+
+        <!--conflict start-->
+        <div class="dialogue-row junior-row">
+          <div class="content-wrapper">
+            <div class="message junior">
+              <div class="author">Junior Developer</div>
+              <p>— მაშინ რატომ დამიტოვეთ ეს task-ი?</p>
+
+              <div class="button-group">
+                <div
+                  class="interaction-hint trigger-btn"
+                  data-target="panel-analyze-conflict"
+                >
+                  <span>Analyze</span>
+                  <div class="pulse-dot"></div>
                 </div>
-                <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha"></div>
+
+                <div
+                  class="interaction-hint trigger-btn conflict-btn"
+                  data-target="panel-conflict"
+                >
+                  <span>Conflict Start</span>
+                  <div class="pulse-dot red-dot"></div>
+                </div>
+              </div>
             </div>
 
-            <div class="dialogue-row manager-row">
-                <div class="avatar"><img src="assets/giorgi.jpeg" alt="Giorgi"></div>
-                <div class="content-wrapper">
-                    <div class="message manager">
-                        <div class="author">Engineering Manager</div>
-                        <p>— ეს შედეგია.</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
+            <div class="analysis-panel panel-analyze-conflict">
+              <div class="analysis-card">
+                <h4>სამართლიანობა /სამართლიანი წესრიგი</h4>
+                <p>
+                  <strong>რეალური მიზანი:</strong>
+                  ლოგიკური წინააღმდეგობის ჩვენება და ძალთა ბალანსის აღდგენა.
+                  <br />
+
+                  <strong>ემოცია:</strong>
+                  სასოწარკვეთა. <br />
+
+                  <strong>რას ელოდება:</strong>
+                  ლოგიკურ, სამართლიან პასუხს. <br />
+
+                  <strong>საჭიროება:</strong>
+                  სამართლიანობა / მნიშვნელობა. <br />
+                  <strong>რა პრობლემის გადაჭრას ცდილობს?</strong> ცდილობს
+                  მენეჯერის ლოგიკაში ბზარის პოვნას.<br />
+                  <strong>ანალიზი:</strong> ლაშა ებღაუჭება
+                  <em>სამართლიანობას</em>. "თუ არ გჯერა ჩემი, რატომ მანდე ეს
+                  საქმე?" ეს არის სასოწარკვეთილი მცდელობა, აღადგინოს ძალთა
+                  ბალანსი.
+                </p>
+              </div>
+            </div>
+            <div class="analysis-panel panel-conflict">
+              <div class="analysis-card" style="border-color: #ef4444">
+                <span class="badge badge-conflict"
+                  >Stage 3: Conflict Start</span
+                >
+                <h4>ესკალაცია და შეტევა</h4>
+                <p>
+                  <strong>რატომ არის ეს კონფლიქტი?</strong><br />
+                  აქ ლაშა წყვეტს თავის მართლებას კონკრეტულ ბაგზე და გადადის
+                  მენეჯერის გადაწყვეტილების კრიტიკაზე (პიროვნულ შეტევაზე).
+                  <br /><br />
+                </p>
+
+                <h4>გამოვლენილი თავდაცვის ფორმები</h4>
+                <p>
+                  მხარეები უკვე "თავდაცვის რეჟიმში" არიან. ლაშამ ჩართო ორი
+                  მექანიზმი:
+                  <br /><br />
+                  <strong>1. რაციონალიზაცია (Rationalization):</strong> ცდილობს
+                  ლოგიკური ჩიხი მოუძებნოს მენეჯერს, რათა საკუთარი არჩევანი
+                  გაამართლოს.
+                  <br />
+                  <strong>2. შეტევა (Attack/Deflection):</strong> საუკეთესო
+                  თავდაცვა თავდასხმაა. ის ისრებს მენეჯერის გადაწყვეტილებაზე
+                  გადაიტანს.
+                </p>
+                <strong>შედეგი:</strong> საუბარი სცდება პროფესიულ ჩარჩოს და
+                ხდება ემოციური დაპირისპირება.
+              </div>
+            </div>
+          </div>
+          <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha" /></div>
+        </div>
+
+        <div class="dialogue-row manager-row">
+          <div class="avatar">
+            <img src="assets/giorgi.jpeg" alt="Giorgi" />
+          </div>
+          <div class="content-wrapper">
+            <div class="message manager analysis">
+              <div class="author">Engineering Manager</div>
+              <p>— იმიტომ, რომ უნდა ისწავლო პასუხისმგებლობა.</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="dialogue-row junior-row">
-                <div class="content-wrapper">
-                    <div class="message junior">
-                        <div class="author">Junior Developer</div>
-                        <p>— მთელი ღამე ვიმუშავე fix-ზე.</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
-                <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha"></div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>აგენტურუბა /ავტონომია</h4>
+                <p>
+                  <strong>რეალური მიზანი:</strong>
+                  პატერნალიზმის გამართლება და ძალაუფლების შენარჩუნება. <br />
+
+                  <strong>ემოცია:</strong> მანიპულაცია, კონტრლის მოპოვება
+                  <br />
+
+                  <strong>რას ელოდება:</strong>
+                  დამორჩილებას. <br />
+
+                  <strong>საჭიროება:</strong>
+                  ავტონომიის მოპოვება სხვის ცხოვრებაზე. <br />
+
+                  <strong>ანალიზი:</strong> გიორგი იყენებს "სწავლების" მოტივს,
+                  როგორც ალიბის. სინამდვილეში, ეს არის ტოქსიკური პატერნალიზმი.
+                  ის ლაშას ექცევა როგორც ობიექტს, რომელმაც გაკვეთილი უნდა
+                  ისწავლოს.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dialogue-row junior-row">
+          <div class="content-wrapper">
+            <div class="message junior analysis">
+              <div class="author">Junior Developer</div>
+              <p>— ეს სწავლაა?</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="dialogue-row manager-row">
-                <div class="avatar"><img src="assets/giorgi.jpeg" alt="Giorgi"></div>
-                <div class="content-wrapper">
-                    <div class="message manager">
-                        <div class="author">Engineering Manager</div>
-                        <p>— იმიტომ, რომ დღისით შეცდი.</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>მნიშვნელობა / კოჰერენტულობა</h4>
+                <p>
+                  <strong>კითხვა:</strong> აქვს თუ არა ამ ყველაფერს აზრი?<br />
+
+                  <strong>რეალური მიზანი:</strong>
+                  მნიშვნელობის პოვნა <br />
+
+                  <strong>ემოცია:</strong>
+                  ტკივილი / ცინიზმი. <br />
+
+                  <strong>რას ელოდება:</strong>
+                  აღიარებას და ადამიანურ პასუხს. <br />
+
+                  <strong>საჭიროება:</strong>
+                  მნიშვნელობის დაბრუნება/ მოპოვება <br />
+                  <strong>ანალიზი:</strong> ლაშა ვერ ხედავს
+                  <em>მნიშვნელობას. </em> ის გრძნობს, რომ მას "წირავენ" და არა
+                  ასწავლიან.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha" /></div>
+        </div>
+
+        <div class="dialogue-row manager-row">
+          <div class="avatar">
+            <img src="assets/giorgi.jpeg" alt="Giorgi" />
+          </div>
+          <div class="content-wrapper">
+            <div class="message manager analysis">
+              <div class="author">Engineering Manager</div>
+              <p>— ეს შედეგია.</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-             <div class="dialogue-row junior-row">
-                <div class="content-wrapper">
-                    <div class="message junior">
-                        <div class="author">Junior Developer</div>
-                        <p>— მარტო მე არა, სისტემაც—</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
-                <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha"></div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>სამართლიანობა /სამართლიანი წესრიგი</h4>
+                <p>
+                  <strong>რეალური მიზანი:</strong>
+                  ემოციური პასუხისმგებლობის თავიდან აცილება. <br />
+
+                  <strong>ემოცია:</strong>
+                  გულგრილობა. <br />
+
+                  <strong>რას ელოდება:</strong>
+                  დუმილს. <br />
+
+                  <strong>საჭიროება:</strong>
+                  თავდაცვა. <br />
+
+                  <strong>რეაქცია:</strong>
+                  კონტაქტი ფაქტობრივად დაკარგულია. <br />
+                  <strong>ანალიზი:</strong> გიორგი სრულად თიშავს ემოციურ
+                  ინტელექტს. ის ამბობს, რომ სამყარო (და არა თავად ის) სჯის
+                  ლაშას. ეს ლაშას უტოვებს განცდას, რომ <em>სამართლიანობა</em> არ
+                  არსებობს.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dialogue-row junior-row">
+          <div class="content-wrapper">
+            <div class="message junior analysis">
+              <div class="author">Junior Developer</div>
+              <p>— მთელი ღამე ვიმუშავე fix-ზე.</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="dialogue-row manager-row">
-                <div class="avatar"><img src="assets/giorgi.jpeg" alt="Giorgi"></div>
-                <div class="content-wrapper">
-                    <div class="message manager">
-                        <div class="author">Engineering Manager</div>
-                        <p>— ნუ გადამიბრალებ გუნდს.</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>სტატუსი / აღიარების მოთხოვნა</h4>
+                <p>
+                  <strong>რას ელოდება ჩემგან?</strong> უნდა რომ შეამჩნიონ და
+                  აღიარონ<br />
+                  <strong>რეალური მიზანი:</strong>
+                  აღიარების მიღება და საკუთარი ღირებულების დადასტურება. <br />
+
+                  <strong>ემოცია:</strong>
+                  იმედი, შიში, შფითვა <br />
+                  <strong>ანალიზი:</strong> ლაშა გადადის მსხვერპლის პოზიციაში.
+                  მას სურს <em>ვალიდაცია</em>, რომ ის მონდომებულია. "მიუხედავად
+                  შეცდომისა, მე მაინც კარგი ვარ".
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha" /></div>
+        </div>
+
+        <div class="dialogue-row manager-row">
+          <div class="avatar">
+            <img src="assets/giorgi.jpeg" alt="Giorgi" />
+          </div>
+          <div class="content-wrapper">
+            <div class="message manager analysis">
+              <div class="author">Engineering Manager</div>
+              <p>— იმიტომ, რომ დღისით შეცდი.</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="scene-divider"><span>ლაშა ხმას უწევს</span></div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>აგენტურობა / ავტონომია</h4>
+                <p>
+                  <strong>ემოცია:</strong> დაუნდობლობა, სიმკაცრე, უარყოფა<br />
+                  <strong>რეალური მიზანი:</strong>
+                  მოტივაციის გაქრობა და დამნაშავის იდენტიფიკაცია <br />
+                  <strong>რას ელოდება:</strong>
+                  ავტონომიის დაბრუნებას <br />
 
-            <div class="dialogue-row junior-row">
-                <div class="content-wrapper">
-                    <div class="message junior">
-                        <div class="author">Junior Developer</div>
-                        <p>— მაშინ რატომ მეძახით გუნდს, თუ შეცდომაზე მარტო ვრჩები?</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
-                <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha"></div>
+                  <strong>საჭიროება:</strong>
+                  კონტროლი. <br />
+                  <strong>ანალიზი:</strong> გიორგი უარყოფს ლაშას მცდელობას
+                  მიიღოს "ქულები". მისი გზავნილია: "შეცდომის გამოსწორება გმირობა
+                  არაა, ვალდებულებაა". ეს კლავს <em>მოტივაციას</em> და
+                  <em>მიკუთვნებულობას</em>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dialogue-row junior-row">
+          <div class="content-wrapper">
+            <div class="message junior analysis">
+              <div class="author">Junior Developer</div>
+              <p>— მარტო მე არა, სისტემაც—</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="dialogue-row manager-row">
-                <div class="avatar"><img src="assets/giorgi.jpeg" alt="Giorgi"></div>
-                <div class="content-wrapper">
-                    <div class="message manager">
-                        <div class="author">Engineering Manager</div>
-                        <p>— იმიტომ, რომ ახლა junior ხარ.</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>უსაფრთხოება / პასუხისმგებლობის გაზიარება</h4>
+                <p>
+                  <strong>რა პრობლემის გადაჭრას ცდილობს?</strong> მარტოობის
+                  შემცირებას.<br />
+                  <strong>რეალური მიზანი:</strong>
+                  მარტოობის შემცირება და პასუხისმგებლობის გაზიარება. <br />
+
+                  <strong>ემოცია:</strong>
+                  შიში. <br />
+                  <strong>ანალიზი:</strong> ლაშა ცდილობს იპოვოს სხვა დამნაშავე
+                  (სისტემა), რათა შეამციროს წნეხი საკუთარ თავზე. მას სჭირდება
+                  მოკავშირე, თუნდაც აბსტრაქტული.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha" /></div>
+        </div>
+
+        <div class="dialogue-row manager-row">
+          <div class="avatar">
+            <img src="assets/giorgi.jpeg" alt="Giorgi" />
+          </div>
+          <div class="content-wrapper">
+            <div class="message manager analysis">
+              <div class="author">Engineering Manager</div>
+              <p>— ნუ გადამიბრალებ გუნდს.</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="dialogue-row junior-row">
-                <div class="content-wrapper">
-                    <div class="message junior">
-                        <div class="author">Junior Developer</div>
-                        <p>— და როდის არ ვიქნები?</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
-                <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha"></div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>მიკუთვნებულობა / არჩეულად ყოფნა</h4>
+                <p>
+                  <strong>რეალური მიზანი:</strong>
+                  ლაშას იზოლაცია „ჩვენ vs შენ“ ხაზის გავლებით. <br />
+
+                  <strong>ემოცია:</strong>
+                  დაცვითი აგრესია. <br />
+
+                  <strong>რას ელოდება:</strong>
+                  იზოლაციას. <br />
+
+                  <strong>საჭიროება:</strong>
+                  ჯგუფის დაცვა. <br />
+                  <strong>ანალიზი:</strong> გიორგი ხაზს უსვამს ზღვარს: "გუნდი"
+                  (კარგი) vs "შენ" (ცუდი). ლაშა ოფიციალურად გარიყულია ჯგუფიდან,
+                  რაც არღვევს მის <em>მიკუთვნებულობის</em> (Belonging)
+                  ფუნდამენტურ მოთხოვნილებას.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-divider"><span>ლაშა ხმას უწევს</span></div>
+
+        <div class="dialogue-row junior-row">
+          <div class="content-wrapper">
+            <div class="message junior analysis">
+              <div class="author">Junior Developer</div>
+              <p>— მაშინ რატომ მეძახით გუნდს, თუ შეცდომაზე მარტო ვრჩები?</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="scene-divider"><span>პაუზა. გიორგი უყურებს</span></div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>მიკუთვნებულობა / არჩეულად ყოფნა</h4>
+                <p>
+                  <strong>რეალური მიზანი:</strong>
+                  კუთვნილების დადასტურება. <br />
 
-            <div class="dialogue-row manager-row">
-                <div class="avatar"><img src="assets/giorgi.jpeg" alt="Giorgi"></div>
-                <div class="content-wrapper">
-                    <div class="message manager">
-                        <div class="author">Engineering Manager</div>
-                        <p>— როცა მსგავს რაღაცებს აღარ გააკეთებ.</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
+                  <strong>ემოცია:</strong>
+                  ღალატი. <br />
+
+                  <strong>რას ელოდება:</strong>
+                  სიმართლეს. <br />
+
+                  <strong>საჭიროება:</strong>
+                  კავშირი. <br />
+                  <strong>ფარული ემოცია:</strong> ტკივილი და ღალატის განცდა.<br />
+                  <strong>ანალიზი:</strong> ეს არის დიალოგის კულმინაცია. ლაშა
+                  ამხელს გიორგის ორმაგ სტანდარტს. მისი მთავარი ტკივილია:
+                  "ვუნდივარ თუ არა სხვებს? მიღებული ვარ თუ არა?".
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha" /></div>
+        </div>
+
+        <div class="dialogue-row manager-row">
+          <div class="avatar">
+            <img src="assets/giorgi.jpeg" alt="Giorgi" />
+          </div>
+          <div class="content-wrapper">
+            <div class="message manager analysis">
+              <div class="author">Engineering Manager</div>
+              <p>— იმიტომ, რომ ახლა junior ხარ.</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="dialogue-row junior-row">
-                <div class="content-wrapper">
-                    <div class="message junior">
-                        <div class="author">Junior Developer</div>
-                        <p>— და თუ გავაკეთებ?</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
-                <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha"></div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>სტატუსი/აღიარება</h4>
+                <p>
+                  <strong>რეალური მიზანი:</strong>
+                  იარლიყის მიწებება და სტატუსის დაკნინება. <br />
+
+                  <strong>ემოცია:</strong>
+                  დამცირება <br />
+
+                  <strong>საჭიროება:</strong>
+                  სტატუსის დაკნინება <br />
+                  <strong>ანალიზი:</strong> გიორგი იყენებს სიტყვა "Junior"-ს არა
+                  როგორც პოზიციას, არამედ როგორც დიაგნოზს. ეს ართმევს ლაშას
+                  <em>კომპეტენციის</em> და <em>თანასწორობის</em> განცდას.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dialogue-row junior-row">
+          <div class="content-wrapper">
+            <div class="message junior analysis">
+              <div class="author">Junior Developer</div>
+              <p>— და როდის არ ვიქნები?</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="dialogue-row manager-row">
-                <div class="avatar"><img src="assets/giorgi.jpeg" alt="Giorgi"></div>
-                <div class="content-wrapper">
-                    <div class="message manager">
-                        <div class="author">Engineering Manager</div>
-                        <p>— მაშინ აქ ვერ გაჩერდები.</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>სტატუსი / აღიარება</h4>
+                <p>
+                  <strong>რა პრობლემის გადაჭრას ცდილობს?</strong> მომავლის
+                  კონტროლს.<br />
+                  <strong>რეალური მიზანი:</strong>
+                  იმედის პოვნა და მომავლის კონტროლი. <br />
+
+                  <strong>ემოცია:</strong>
+                  შიში. <br />
+
+                  <strong>რას ელოდება:</strong>
+                  მომავლის ხედვას. <br />
+                  <strong>ანალიზი:</strong> ლაშას სურს იცოდეს, აქვს თუ არა
+                  გავლენა თავის მომავალზე. "შემიძლია თუ არა წარმატება?". მას
+                  სჭირდება <em>იმედი</em>.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha" /></div>
+        </div>
+
+        <div class="scene-divider"><span>პაუზა. გიორგი უყურებს</span></div>
+
+        <div class="dialogue-row manager-row">
+          <div class="avatar">
+            <img src="assets/giorgi.jpeg" alt="Giorgi" />
+          </div>
+          <div class="content-wrapper">
+            <div class="message manager analysis">
+              <div class="author">Engineering Manager</div>
+              <p>— როცა მსგავს რაღაცებს აღარ გააკეთებ.</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="scene-divider"><span>ოთახში დაძაბულობაა. ლაშა სკამს სწევს უკან.</span></div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>კომპეტენტურობა / მიღწევა</h4>
+                <p>
+                  <strong>ემოცია:</strong> პირობითი კმაყოფილება.<br />
+                  <strong>რეალური მიზანი:</strong>
+                  ბუნდოვანი კონტროლის შენარჩუნება. <br />
 
-            <div class="dialogue-row junior-row">
-                <div class="content-wrapper">
-                    <div class="message junior">
-                        <div class="author">Junior Developer</div>
-                        <p>— გასაგებია.</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
-                <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha"></div>
+                  <strong>რას ელოდება:</strong>
+                  უსასრულო მორჩილებას. <br />
+
+                  <strong>საჭიროება:</strong>
+                  ძალაუფლება. <br />
+                  <strong>ანალიზი:</strong> პასუხი ბუნდოვანია. ეს არ აძლევს
+                  ლაშას კონკრეტულ გზას (Actionable Feedback). ეს ზრდის
+                  <em>შფოთვას</em> და ამცირებს <em>უსაფრთხოების</em> განცდას.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dialogue-row junior-row">
+          <div class="content-wrapper">
+            <div class="message junior analysis">
+              <div class="author">Junior Developer</div>
+              <p>— და თუ გავაკეთებ?</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="dialogue-row manager-row">
-                <div class="avatar"><img src="assets/giorgi.jpeg" alt="Giorgi"></div>
-                <div class="content-wrapper">
-                    <div class="message manager">
-                        <div class="author">Engineering Manager</div>
-                        <p>— არა, არ არის გასაგები. იმიტომ ვართ აქ.</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>უსაფრთხოება / მიჯაჭვულობა</h4>
+                <p>
+                  <strong>ფარული ემოცია:</strong> შიში და გამოწვევა.<br />
+                  <strong>რეალური მიზანი:</strong>
+                  უსაფრთხოების შემოწმება. <br />
+
+                  <strong>ემოცია:</strong>
+                  შიში. <br />
+
+                  <strong>რას ელოდება:</strong>
+                  დაცვას. <br />
+
+                  <strong>საჭიროება:</strong>
+                  უსაფრთხოება. <br />
+                  <strong>ანალიზი:</strong> ლაშა ამოწმებს სისტემის საზღვრებს.
+                  მისი ფარული კითხვაა: "დაცული ვარ თუ არა მიტოვებისგან?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha" /></div>
+        </div>
+
+        <div class="dialogue-row manager-row">
+          <div class="avatar">
+            <img src="assets/giorgi.jpeg" alt="Giorgi" />
+          </div>
+          <div class="content-wrapper">
+            <div class="message manager analysis">
+              <div class="author">Engineering Manager</div>
+              <p>— მაშინ აქ ვერ გაჩერდები.</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-            <div class="dialogue-row junior-row">
-                <div class="content-wrapper">
-                    <div class="message junior">
-                        <div class="author">Junior Developer</div>
-                        <p>— ჩემთვის უკვე გასაგებია.</p>
-                        <div class="interaction-hint"><span>Analyze</span><div class="pulse-dot"></div></div>
-                    </div>
-                    <div class="analysis-panel"><div class="analysis-card"><p class="placeholder-text">/// SYSTEM WAITING FOR INPUT ///</p></div></div>
-                </div>
-                <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha"></div>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>მნიშვნელობა / კოჰერენტულობა</h4>
+                <p>
+                  <strong>რეალური მიზანი:</strong>
+                  დაშინება და სრული კონტროლი. <br />
+
+                  <strong>ემოცია:</strong>
+                  ცივი მუქარა. <br />
+
+                  <strong>რას ელოდება:</strong>
+                  სრული დამორჩილება. <br />
+
+                  <strong>საჭიროება:</strong>
+                  კონტროლი. <br />
+                  <strong>ანალიზი:</strong> გიორგი პირდაპირ ემუქრება ლაშას
+                  სოციალური და ფინანსური სიკვდილით (განდევნა). სოციალური
+                  ტვინისთვის ეს ფიზიკური ტკივილის ტოლფასია.
+                  <em>უსაფრთხოება</em> განადგურებულია.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scene-divider">
+          <span>ოთახში დაძაბულობაა. ლაშა სკამს სწევს უკან.</span>
+        </div>
+
+        <div class="dialogue-row junior-row">
+          <div class="content-wrapper">
+            <div class="message junior analysis">
+              <div class="author">Junior Developer</div>
+              <p>— გასაგებია.</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
             </div>
 
-        </section>
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>უსაფრთხოება / მიჯაჭვულობა</h4>
+                <p>
+                  <strong>რა პრობლემის გადაჭრას ცდილობს?</strong> კონფლიქტიდან
+                  გაქცევას.<br />
+                  <strong>რეალური მიზანი:</strong>
+                  კონფლიქტიდან გასვლა (გაქცევა). <br />
+
+                  <strong>ემოცია:</strong>
+                  ემოციური გათიშვა. <br />
+
+                  <strong>რას ელოდება:</strong>
+                  დასრულებას. <br />
+
+                  <strong>საჭიროება:</strong>
+                  პრობლემისგან გაქცევას, უსაფრთხოდ ყოფნას <br />
+                  <strong>ანალიზი:</strong> ლაშა წყვეტს ბრძოლას. ეს არ არის
+                  გაგება, ეს არის ემოციური გათიშვა ("Quiet Quitting"-ის
+                  დასაწყისი). მან დაკარგა ბრძოლის <em>აზრი</em>.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha" /></div>
+        </div>
+
+        <div class="dialogue-row manager-row">
+          <div class="avatar">
+            <img src="assets/giorgi.jpeg" alt="Giorgi" />
+          </div>
+          <div class="content-wrapper">
+            <div class="message manager analysis">
+              <div class="author">Engineering Manager</div>
+              <p>— არა, არ არის გასაგები. იმიტომ ვართ აქ.</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
+            </div>
+
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>აგენტურობა / ავტონომია</h4>
+                <p>
+                  <strong>ემოცია:</strong> კონტროლის დაკარგვის შიში.<br />
+                  <strong>რეალური მიზანი:</strong> გიორგის უნდა შეინარჩუნოს
+                  კონტროლი და არ მისცეს ლაშას კონფლიქტიდან გასვლის უფლება
+                  (დიალოგის “დახურვა” მის ხელში იყოს).<br />
+                  <strong>რას ელოდება:</strong> სრული მორჩილება და არა მხოლოდ
+                  ჩუმი თანხმობა.<br />
+                  <strong>საჭიროება:</strong> სტატუსი / კონტროლი / წესრიგი.<br />
+                  <strong>ანალიზი:</strong> გიორგი არ აძლევს ლაშას კონფლიქტიდან
+                  გასვლის უფლებას (ზღუდავს მის <em>ავტონომიას</em>). მას სურს
+                  სრული მორჩილება და არა მხოლოდ ჩუმი თანხმობა.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dialogue-row junior-row">
+          <div class="content-wrapper">
+            <div class="message junior analysis">
+              <div class="author">Junior Developer</div>
+              <p>— ჩემთვის უკვე გასაგებია.</p>
+
+              <div class="interaction-hint">
+                <span>Analyze</span>
+                <div class="pulse-dot"></div>
+              </div>
+            </div>
+
+            <div class="analysis-panel">
+              <div class="analysis-card">
+                <h4>მნიშვნელობა / კოჰერენტულობა</h4>
+                <p>
+                  <strong>რეალური მიზანი:</strong> ლაშა ცდილობს შიდა
+                  გადაწყვეტილებით დაიბრუნოს კონტროლი — “მე მაინც მე ვწყვეტ”.<br />
+                  <strong>ემოცია:</strong> დანებება / ემოციური გათიშვა (შიგნით —
+                  ტკივილი).<br />
+                  <strong>რას ელოდება:</strong> რეალურად აღარ ელოდება დიალოგს;
+                  ელის დასრულებას და სივრციდან გასვლას.<br />
+                  <strong>საჭიროება:</strong> ავტონომია + მნიშვნელობა (Meaning)
+                  — “ამ სისტემაში მე არ მაქვს მომავალი”.<br />
+                  <strong>რეაქცია:</strong> მოსმენა (ძალიან მშვიდად) და
+                  უსაფრთხოების აღდგენის მცდელობა, თორემ ადამიანი
+                  “გადახურულია”.<br />
+                  <strong>ანალიზი:</strong> ლაშამ გააკეთა დასკვნა: "ამ სისტემაში
+                  მე არ მაქვს მომავალი". მან იპოვა უარყოფითი
+                  <em>მნიშვნელობა</em> (Meaning) და დაიბრუნა
+                  <em>ავტონომია</em> შინაგანი გადაწყვეტილების მიღებით
+                  (სავარაუდოდ, წასვლის).
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="avatar"><img src="assets/lasha.jpeg" alt="Lasha" /></div>
+        </div>
+      </section>
+
+      <!--alternative ACR modala -->
+      <section id="ACR-Modal" class="resolution-area">
+        <div class="resolution-header">
+          <h2>
+            PHASE 3:
+            <span class="highlight-green"
+              >ACR (Active Constructive Responding)
+            </span>
+          </h2>
+          <p>როგორ შევცვალოთ რეალობა? <strong>აირჩიე პასუხი</strong></p>
+        </div>
+
+        <div class="simulation-card glass-panel mb-5">
+          <div class="sim-context">
+            <div
+              class="context-label"
+              style="color: #4ade80; border-color: #4ade80"
+            >
+              Scene 1: Miscommunication
+            </div>
+            <div class="dialogue-snippet">
+              <div class="avatar-small">
+                <img src="assets/lasha.jpeg" alt="Lasha" />
+              </div>
+              <div class="snippet-text">
+                <strong>Lasha:</strong>
+                <p>— production-ზე შეცდომა გამოვიდა. (თავდაცვა)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sim-choice">
+            <h3>როგორ უნდა უპასუხოს გიორგიმ?</h3>
+            <div class="options-grid">
+              <div
+                class="option-card destructive"
+                onclick="toggleScenario('sc1-dest', 'sc1-cons')"
+              >
+                <div class="opt-header">
+                  <span class="icon">🚫</span> Passive-Destructive
+                </div>
+                <p>„და ვინ შეეხო ამ მოდულს ბოლოს?“</p>
+              </div>
+              <div
+                class="option-card constructive"
+                onclick="toggleScenario('sc1-cons', 'sc1-dest')"
+              >
+                <div class="opt-header">
+                  <span class="icon">✅</span> Active-Constructive
+                </div>
+                <p>„გასაგებია. რა მასშტაბის პრობლემაა და ახლა რა სტატუსია?“</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="sc1-dest" class="outcome-panel hidden destructive-panel">
+            <h4>შედეგი: დაკითხვა</h4>
+            <p>გიორგი ეძებს დამნაშავეს. ლაშა იწყებს თავის მართლებას.</p>
+          </div>
+          <div id="sc1-cons" class="outcome-panel hidden constructive-panel">
+            <h4>
+              შედეგი: პრობლემაზე ფოკუსირება, სწორი კომუნიკაციის გაგრძელების
+              სურვილი
+            </h4>
+
+            <div class="new-dialogue-box">
+              <div class="dialogue-line manager">
+                <h4>გიორგი:</h4>
+                <p>
+                  „მესმის, რომ ახლა თავს მარტო გრძნობ ამ პრობლემასთან მაგრამ ეს
+                  თასკი იმიტომ დაგიტოვე, რომ მჯერა შენი კომპეტენციის შენი აზრით,
+                  რამ გამოიწვია ეს ხარვეზი?
+                </p>
+              </div>
+
+              <div class="dialogue-line junior">
+                <h4>ლაშა</h4>
+                <p>
+                  „სიმართლე გითხრა, ღამე ძალიან დაღლილი ვიყავი და ტესტირების
+                  ერთი ქეისი გამომრჩა... არ მინდოდა ამის აღიარება.“
+                </p>
+              </div>
+
+              <div class="dialogue-line manager">
+                <h4>გიორგი:</h4>
+                <p>
+                  „გასაგებია. მოდი, ერთად მოვიფიქროთ, როგორ დავაზღვიოთ ეს
+                  პროცესი შემდეგ ჯერზე“
+                </p>
+              </div>
+            </div>
+
+            <div class="acr-analysis">
+              <h5>რატომ იმუშავა ამან? (SCARF & ACR)</h5>
+              <ul class="check-list">
+                <li>
+                  ✅ <strong>უსაფრთხოება:</strong> გიორგიმ მიიღო ლაშას ემოცია
+                  განსჯის გარეშე.
+                </li>
+                <li>
+                  ✅ <strong>ავტონომია:</strong> კითხვის დასმით („შენი
+                  აზრით...“) ლაშას დაუბრუნდა კონტროლის განცდა.
+                </li>
+                <li>
+                  ✅ <strong>კომპეტენცია / სტატუსი:</strong> გიორგიმ ხაზი
+                  გაუსვა, რომ ენდობა ლაშას უნარებს.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="simulation-card glass-panel mb-5">
+          <div class="sim-context">
+            <div class="context-label">Scene 2: Conflict Trigger</div>
+            <div class="dialogue-snippet">
+              <div class="avatar-small">
+                <img src="assets/lasha.jpeg" alt="Lasha" />
+              </div>
+              <div class="snippet-text">
+                <strong>Lasha:</strong>
+                <p>— მაშინ რატომ დამიტოვეთ ეს task-ი? (შეტევა)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sim-choice">
+            <h3>როგორ უნდა უპასუხოს გიორგიმ?</h3>
+            <div class="options-grid">
+              <div
+                class="option-card destructive"
+                onclick="toggleScenario('sc2-dest', 'sc2-cons')"
+              >
+                <div class="opt-header">
+                  <span class="icon">🚫</span> Passive-Destructive
+                </div>
+                <p>„იმიტომ, რომ უნდა ისწავლო პასუხისმგებლობა.“</p>
+              </div>
+              <div
+                class="option-card constructive"
+                onclick="toggleScenario('sc2-cons', 'sc2-dest')"
+              >
+                <div class="opt-header">
+                  <span class="icon">✅</span> Active-Constructive
+                </div>
+                <p>
+                  „მესმის შენი ბრაზი. მოდი, მშვიდად გავიაროთ, რამ გამოიწვია ეს?“
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="sc2-dest" class="outcome-panel hidden destructive-panel">
+            <h4>შედეგი: კონფლიქტი</h4>
+            <p>გიორგიმ აირჩია დომინირება. ლაშა გადადის თავდაცვაში.</p>
+          </div>
+          <div id="sc2-cons" class="outcome-panel hidden constructive-panel">
+            <h4>შედეგი: ვალიდაცია, უსაფრთხოება /</h4>
+            <div class="new-dialogue-box">
+              <div class="dialogue-line manager">
+                <strong>გიორგი:</strong> "მესმის, რომ უსამართლოდ გრძნობ თავს. მე
+                ეს თასკი დაგიტოვე იმიტომ, რომ მჯერა შენი პოტენციალის."
+              </div>
+            </div>
+            <div class="acr-analysis">
+              <ul class="check-list">
+                <li>
+                  ✅ <strong>სტატუსი/ აღიარება:</strong>გიორგიმ აღიარა ლაშას
+                  კომპეტენცია, აჩვენა რომ ესმოდა მისი ემოციის მიზეზის, მოუსმინა
+                  ლაშას, ამით ლაშა მიხვდა რომ მისი კომპეტენცია/საქმეში ჩართულობა
+                  ღირებული იყო
+                </li>
+                <li>
+                  ✅
+                  <strong>მიკუთვნებულობა / არჩეულად ყოფნა:</strong> კომპეტენციის
+                  ხაზგასმით გიორგიმ აჩვენა, რომ მისთვის მნიშვნელოვანი იყო ლაშას
+                  ემოცია, აზრი და ის პროცესის ნაწილი იყო
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="simulation-card glass-panel">
+          <div class="sim-context">
+            <div
+              class="context-label"
+              style="color: #ef4444; border-color: #ef4444"
+            >
+              Scene 3: Escalation
+            </div>
+            <div class="dialogue-snippet">
+              <div class="avatar-small">
+                <img
+                  src="assets/giorgi.jpeg"
+                  alt="Giorgi"
+                  style="border-color: #3b82f6"
+                />
+              </div>
+              <div class="snippet-text">
+                <strong>Giorgi:</strong>
+                <p>— იმიტომ, რომ დღისით შეცდი. (ბრალდება)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sim-choice">
+            <h3>როგორ უნდა უპასუხოს ლაშამ? (ACR ქვემოდან ზევით)</h3>
+            <div class="options-grid">
+              <div
+                class="option-card destructive"
+                onclick="toggleScenario('sc3-dest', 'sc3-cons')"
+              >
+                <div class="opt-header">
+                  <span class="icon">🚫</span> Active-Destructive
+                </div>
+                <p>„მარტო მე არა, სისტემაც შეცდა!“</p>
+              </div>
+              <div
+                class="option-card constructive"
+                onclick="toggleScenario('sc3-cons', 'sc3-dest')"
+              >
+                <div class="opt-header">
+                  <span class="icon">✅</span> Active-Constructive
+                </div>
+                <p>
+                  „მართალი ხართ, შეცდომა დავუშვი. აი, როგორ გამოვასწორებ...“
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="sc3-dest" class="outcome-panel hidden destructive-panel">
+            <h4>შედეგი: გადაბრალება</h4>
+            <p>ლაშა არ იღებს პასუხისმგებლობას. მენეჯერი კიდევ უფრო ბრაზდება.</p>
+          </div>
+          <div id="sc3-cons" class="outcome-panel hidden constructive-panel">
+            <h4>შედეგი: დე-ესკალაცია და ნდობის აღდგენა</h4>
+            <div class="new-dialogue-box">
+              <div class="dialogue-line junior">
+                <h4>ლაშა:</h4>
+                <p>
+                  "გეთანხმებით, ეს ჩემი პასუხისმგებლობა იყო. უკვე გავაანალიზე და
+                  დავამატე ტესტები."
+                </p>
+                <h4>გიორგი</h4>
+                <p>
+                  „გასაგებია. მოდი, ერთად მოვიფიქროთ, როგორ დავაზღვიოთ ეს
+                  პროცესი შემდეგ ჯერზე
+                </p>
+              </div>
+            </div>
+            <div class="acr-analysis">
+              <ul class="check-list">
+                <li>
+                  ✅ <strong>უსაფრთხოება:</strong> ემოციის ვალიდაციამ შეამცირა
+                  „თავდაცვის მოთხოვნილება“.
+                </li>
+                <li>
+                  ✅ <strong>ავტონომია / აგენტურობა:</strong> ღია კითხვის დასმით
+                  („შენი აზრით...“) ლაშა ჩაერთო გამოსავლის ძიებაში.
+                </li>
+                <li>
+                  ✅
+                  <strong> მიკუთვნებულობა / არჩეულად ყოფნა:</strong> გაძლიერდა
+                  ნდობა და მიჯაჭვულობა მხარეებს შორის.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
