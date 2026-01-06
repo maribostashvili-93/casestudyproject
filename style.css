@@ -908,3 +908,36 @@ body {
     grid-template-columns: 1fr; /* ღილაკები ერთმანეთის ქვემოთ */
   }
 }
+
+/*acr button */
+
+/* სპეციალური სტილი ACR ღილაკისთვის */
+
+.btn-ACR {
+  /* მთავარი ცვლილება ცენტრირებისთვის */
+  display: block !important;
+  width: fit-content !important;
+  margin: 30px auto !important; /* auto აყენებს ცენტრში */
+
+  /* ვიზუალი */
+  padding: 15px 40px !important;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 50px !important;
+  font-family: "Inter", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  box-shadow: 0 0 25px rgba(6, 182, 212, 0.5) !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease-in-out !important;
+  animation: pulse-glow 2s infinite !important;
+}
+
+.btn-ACR:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 40px rgba(6, 182, 212, 0.8) !important;
+  filter: brightness(1.2) !important;
+}
